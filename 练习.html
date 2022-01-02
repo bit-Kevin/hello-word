@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //定义阶乘函数
+
+        function fun(a)
+
+        {
+
+            //嵌套函数定义，计算平方值的函数
+
+            function multi(x)
+
+            {
+
+                return x * x;
+
+            }
+
+            var m = 1;
+
+            for (var i = 1; i <= multi(a); i++)
+
+            {
+
+                m = m * i;
+
+            }
+
+            return m;
+
+        }
+
+        var sum = fun(2) + fun(3);
+
+        document.write(sum);
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
